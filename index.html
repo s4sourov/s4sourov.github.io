@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sourov Datta — IT Student & Photographer</title>
+<meta name="description" content="Portfolio of Sourov Datta, IT student and nature photographer based in Sydney.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <div class="bar">
+    <a href="#top" class="logo" aria-label="Home">sd<span>.</span></a>
+    <nav id="links" aria-label="Main">
+      <span class="pill" id="pill"></span>
+      <a href="#top" data-s="top">Home</a><a href="#about" data-s="about">About</a><a href="#work" data-s="work">Work</a><a href="#path" data-s="path">Path</a><a href="#contact" data-s="contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact"><i></i>Let's talk</a>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="kicker">IT student &amp; photographer</p>
+      <h1 id="name" data-text="Sourov Datta">Sourov Datta</h1>
+      <p class="tagline">Chasing light through a lens, building things with code.</p>
+      <div class="hero-meta">
+        <span><i class="dot"></i>Sydney, <b id="clock">--:--</b></span>
+        <span>from Habiganj, Sylhet</span>
+      </div>
+      <div class="cta">
+        <a class="btn solid" href="#contact">Say hello</a>
+        <a class="btn" href="#work">See work</a>
+      </div>
+    </div>
+
+    <div class="viewfinder" id="vf">
+      <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+      <div class="frame">
+        <img src="images/profile.jpg" alt="Sourov Datta" id="photo" onerror="this.remove()">
+        <svg class="aperture" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width=".6"/>
+          <g stroke="currentColor" stroke-width=".6" fill="none">
+            <path d="M50 16 L68 47"/><path d="M84 50 L53 68"/><path d="M50 84 L32 53"/><path d="M16 50 L47 32"/>
+            <path d="M74 26 L53 33"/><path d="M26 74 L47 67"/>
+          </g>
+        </svg>
+        <div class="lock"></div>
+        <div class="scan"></div>
+      </div>
+      <div class="hud"><span>ƒ/1.8</span><span>1/250</span><span>ISO 100</span><span class="rec"><i></i>live</span></div>
+    </div>
+  </section>
+
+  <section id="about" class="sec">
+    <h2>About</h2>
+    <div class="about-grid">
+      <p class="lead">I'm an IT student in Sydney who loves capturing what God has made, the quiet, wild beauty of nature. When I'm not behind a camera I'm usually exploring somewhere new on my own, or playing games, sometimes with AI by my side.</p>
+      <ul class="facts">
+        <li><em>Based in</em> Sydney, NSW, Australia</li>
+        <li><em>Hometown</em> Habiganj, Sylhet</li>
+        <li><em>Hobbies</em> Exploring places alone</li>
+        <li><em>Loves</em> Nature, gaming, AI</li>
+      </ul>
+    </div>
+    <div class="skills">
+      <span>Using AI well</span><span>Gaming</span><span>Web design (learning)</span><span>Dart</span><span>Flutter</span><span>HTML · CSS · JS</span><span>Photography</span>
+    </div>
+  </section>
+
+  <section id="work" class="sec">
+    <div class="head"><h2>Selected work</h2><p>Two projects so far, and I'm only getting started.</p></div>
+
+    <article class="project">
+      <div class="visual v-phone">
+        <div class="glow"></div>
+        <div class="phone">
+          <div class="notch"></div>
+          <div class="ph-top"><b></b><span class="cart"><i>2</i></span></div>
+          <div class="ph-grid"><u></u><u></u><u></u><u></u></div>
+          <div class="ph-bar"><b></b><b></b><b></b></div>
+        </div>
+      </div>
+      <div class="info">
+        <p class="tag-line">Group project</p>
+        <h3>Shopping App</h3>
+        <p>A mobile shopping application built with Dart and Flutter, designed and developed together with my teammates.</p>
+        <div class="chips"><span>Dart</span><span>Flutter</span><span>Teamwork</span></div>
+      </div>
+    </article>
+
+    <article class="project flip">
+      <div class="visual v-web">
+        <div class="glow"></div>
+        <div class="browser">
+          <div class="b-top"><i></i><i></i><i></i><span>sourov.dev</span></div>
+          <div class="b-body">
+            <div class="code"><s style="--w:46%"></s><s style="--w:72%"></s><s style="--w:58%"></s><s style="--w:34%"></s><s style="--w:80%"></s><s style="--w:52%"></s></div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <p class="tag-line">Solo project</p>
+        <h3>This Portfolio</h3>
+        <p>My first project built entirely on my own. Hand-written HTML, CSS and JavaScript, deployed on GitHub and Vercel.</p>
+        <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      </div>
+    </article>
+  </section>
+
+  <section id="path" class="sec">
+    <div class="head"><h2>My path</h2><p>From a diploma in Bangladesh to a degree in Sydney.</p></div>
+    <ol class="timeline" id="timeline">
+      <span class="tl-line"><span id="tl-fill"></span></span>
+      <li><time>2024</time><div class="tcard"><h3>Diploma in Engineering</h3><p>Major in Computer Science &amp; Engineering. Completed and graduated in 2024.</p></div></li>
+      <li><time>Sydney</time><div class="tcard"><h3>Central Queensland University</h3><p>Former student at the Sydney campus.</p></div></li>
+      <li class="now"><time>Now</time><div class="tcard"><h3>Bachelor of IT</h3><p>Currently studying at Kings Own Institute, Sydney.</p><span class="badge"><i></i>In progress</span></div></li>
+    </ol>
+  </section>
+
+  <section id="contact" class="sec contact">
+    <div class="c-panel">
+      <div class="c-glow"></div>
+      <p class="tag-line">Contact</p>
+      <h2 class="big">Let's talk.</h2>
+      <p class="lead">Tech, photography, or a trail worth walking. My inbox is open.</p>
+      <div class="tiles">
+        <a class="tile" href="mailto:s4sourov.au@gmail.com">
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>
+          <span>Email</span><b>s4sourov.au@gmail.com</b><em>↗</em>
+        </a>
+        <a class="tile" href="https://wa.me/61414396173" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M4 20l1.4-4.2A8 8 0 1 1 8.4 18.7z"/><path d="M9 9.5c.5 2.5 2.5 4.5 5 5l1.2-1.2-2-1-.8.8c-.8-.4-1.600-1.200-2-2l.8-.8-1-2z"/></svg>
+          <span>WhatsApp</span><b>+61 414 396 173</b><em>↗</em>
+        </a>
+        <a class="tile" href="https://instagram.com/the_singular1ty" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".6"/></svg>
+          <span>Instagram</span><b>@the_singular1ty</b><em>↗</em>
+        </a>
+      </div>
+      <button class="copy" id="copy" type="button">Copy email address</button>
+    </div>
+  </section>
+</main>
+
+<footer><span>© <span id="yr"></span> Sourov Datta. Made by hand in Sydney.</span><a href="#top">Back to top ↑</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
